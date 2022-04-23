@@ -326,12 +326,12 @@
             \ifthenelse{\equal{#1}{Mr} \OR \equal{#1}{Mrs} \OR \equal{#1}{Ms}}{%
                 \ifthenelse{\equal{\DefAdressatTitel}{}}{%
                     \ifthenelse{\equal{\DefSprache}{British}}{%
-                        \renewcommand*{\DefAnredeKopf}{#1}%
-                        \renewcommand*{\DefAnredeText}{ #1}%
+                        \renewcommand*{\DefAnredeKopf}{#1 }%
+                        \renewcommand*{\DefAnredeText}{ #1 }%
                     }{%
                         % Im Amerikanischen mit Punkt.
-                        \renewcommand*{\DefAnredeKopf}{#1.}%
-                        \renewcommand*{\DefAnredeText}{ #1.}%
+                        \renewcommand*{\DefAnredeKopf}{#1. }%
+                        \renewcommand*{\DefAnredeText}{ #1. }%
                     }%
                 }{%
                     % Wenn ein Titel definiert ist, faellt die Anredeform im Englischen weg.
@@ -383,12 +383,12 @@
             \ifthenelse{\equal{#1}{Mr} \OR \equal{#1}{Mrs} \OR \equal{#1}{Ms}}{%
                 \ifthenelse{\equal{\DefZweiterAdressatTitel}{}}{%
                     \ifthenelse{\equal{\DefSprache}{British}}{%
-                        \renewcommand*{\DefZweiterAdressatAnredeKopf}{#1}%
-                        \renewcommand*{\DefZweiterAdressatAnredeText}{ #1}%
+                        \renewcommand*{\DefZweiterAdressatAnredeKopf}{#1 }%
+                        \renewcommand*{\DefZweiterAdressatAnredeText}{ #1 }%
                     }{%
                         % Im Amerikanischen mit Punkt.
-                        \renewcommand*{\DefZweiterAdressatAnredeKopf}{#1.}%
-                        \renewcommand*{\DefZweiterAdressatAnredeText}{ #1.}%
+                        \renewcommand*{\DefZweiterAdressatAnredeKopf}{#1. }%
+                        \renewcommand*{\DefZweiterAdressatAnredeText}{ #1. }%
                     }%
                 }{%
                     % Wenn ein Titel definiert ist, faellt die Anredeform im Englischen weg.
